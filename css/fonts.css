@@ -1,0 +1,43 @@
+@font-face {
+    font-family: Manrope;
+    font-weight: 400;
+    src: local("Manrope Regular"), 
+            local("Manrope-Regular"),
+            url("../fonts/Manrope-Regular.woff2") format("woff2"),
+            url("../fonts/Manrope-Regular.woff") format("woff"),
+            url("../fonts/Manrope-Regular.eot") format("eot");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    src: local("OpenSans Bold"), 
+            local("OpenSans-Bold"),
+            url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+            url("../fonts/OpenSans-Bold.woff") format("woff"),
+            url("../fonts/OpenSans-Bold.eot") format("eot");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    src: local("OpenSans SemiBold"), 
+    local("OpenSans-SemiBold"),
+    url("../fonts/OpenSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/OpenSans-SemiBold.woff") format("woff"),
+    url("../fonts/OpenSans-SemiBold.eot") format("eot");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    src: local("OpenSans Regular"), 
+            local("OpenSans-Regular"),
+            url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+            url("../fonts/OpenSans-Regular.woff") format("woff"),
+            url("../fonts/OpenSans-Regular.eot") format("eot");
+    font-display: swap;
+}
