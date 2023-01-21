@@ -53,5 +53,22 @@ $(function () {
         $('body,html').animate({scrollTop: top}, 900)
     });
 
+
+
+    setInterval(() => {
+        if ($(window).scrollTop() > 0 && $('.header__nav-list').hasClass('header__nav-list--open') == false){
+            $('.burger').addClass('burger--follow')
+        }
+        else{
+            $('.burger').removeClass('burger--follow')
+        }
+    }, 0);
+    $('.overlay, .burger, .header__nav-list').on('click', function(e){
+        e.preventDefault()
+        $('.header__nav-list').toggleClass('header__nav-list--open')
+        $('.overlay').toggleClass('overlay--show')
+        $('.burger').toggleClass('burger--close')
+        })
+
 })
 
