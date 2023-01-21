@@ -31,5 +31,27 @@ $(function () {
             $(this).children('.program__acc-text').slideDown()
         }
     })
+
+
+    jQuery(document).ready(function($){
+        $(".blog__btn").click(function(e){
+        e.preventDefault()
+          $(".blog__page-item:hidden").slice(0,3).fadeIn();
+          if ($(".blog__page-item:hidden").length < 1) $(this).fadeOut();
+        })
+      })
+
+
+
+      $(".header__nav-list a, .footer__list-link, .footer__logo").on("click", function (event) {
+        event.preventDefault()
+        //забираем идентификатор бока с атрибута href
+        var id  = $(this).attr('href'),
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+        top = $(id).offset().top
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({scrollTop: top}, 900)
+    });
+
 })
 
