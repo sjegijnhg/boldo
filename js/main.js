@@ -5,6 +5,21 @@ $(function () {
         infinite: true,
         draggable: false,
         waitForAnimate: true,
+        responsive:[
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 1,
+                    draggable: true,
+                },
+            }
+    ]
     });
 
     $('.review__slider-prev').on('click', function(e){
@@ -70,5 +85,9 @@ $(function () {
         $('.burger').toggleClass('burger--close')
         })
 
+
+        $('.footer__title--slide').on('click', function(e){
+            $(this).next().slideToggle()
+        })
 })
 
