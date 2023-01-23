@@ -68,7 +68,7 @@ html, body{
 
 .header {
     padding-top: 56px;
-    height: 100vh;
+    height: 100%;
     background: url('../img/head/background.svg') 985px -1105px / 100% no-repeat, #0A2640;
     display: flex;
     flex-direction: column;
@@ -2126,12 +2126,6 @@ html, body{
 
 
 @media(max-width: 400px){
-
-    .header {
-        min-height: 115vh;
-    }
-    
-
     
     .header__log{
         padding: 10px 18px;
