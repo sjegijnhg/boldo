@@ -2127,6 +2127,12 @@ html, body{
 
 @media(max-width: 400px){
 
+    .header {
+        min-height: 115vh;
+    }
+    
+
+    
     .header__log{
         padding: 10px 18px;
         right: 70px;
