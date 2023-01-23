@@ -69,11 +69,12 @@ html, body{
 .header {
     padding-top: 56px;
     height: 100vh;
-    background: url(../img/head/background.svg) no-repeat, #0A2640;
-    background-position: 1000px -750px;
+    background: url('../img/head/background.svg') 985px -1105px / 100% no-repeat, #0A2640;
     display: flex;
     flex-direction: column;
 }
+
+
 
 .header__top-inner{
     display: flex;
@@ -83,7 +84,7 @@ html, body{
 }
 
 .header__top {
-
+    margin-bottom: 71px;
 }
 .header__logo {
     padding-right: 10px;
@@ -241,6 +242,7 @@ html, body{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 65px;
+    margin-top: 56px;
 }
 
 .header__item{
@@ -1318,6 +1320,19 @@ html, body{
 /* -------------------------------------------900--------------------------------------------------------- */
 
 @media(max-width:900px){
+
+    .header__body-main{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header__body-content{
+        margin-bottom: 50px;
+    }
+    
+    .header__image-box{
+        display: block;
+    }
     .header__item{
         display: none;
     }
@@ -1486,7 +1501,7 @@ html, body{
         z-index: 10;
         width: 60px;
         height: 60px;
-        border-radius: 25px;
+        border-radius: 10px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1880,7 +1895,25 @@ html, body{
         padding: 15px 30px;
     }
 
+    .header__body-main{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .header__body-content{
+        margin-bottom: 50px;
+    }
+    
+    .header__image-box img{
+        max-width: 300px;
+    }
+
+    .header__image-box--2 img{
+        max-width: 130px;
+    }
+
+    .header__image-box--3 img{
+        max-width: 170px;
     }
 
     .header__title{
@@ -1913,6 +1946,10 @@ html, body{
         margin: 0;
     }
 
+
+    
+
+    
 
     /* ---------------------------------------------------------------------------------------------------- */
 
@@ -2057,7 +2094,28 @@ html, body{
 
 
 @media(max-width: 400px){
+
+    .header__log{
+        padding: 10px 18px;
+        right: 70px;
+        top: 22px;
+    }
+
+
+    .header__image-box img{
+        max-width: 260px;
+    }
+
+    .header__image-box--2 img{
+        max-width: 110px;
+    }
+
+    .header__image-box--3 img{
+        max-width: 150px;
+    }
     
+    /* ---------------------------------------------------------------------------------------------------- */
+
     .customers__content{
         max-width: 340px;
     }
@@ -2148,3 +2206,17 @@ html, body{
     }
 
 } 
+
+
+/* -------------------------------------------345--------------------------------------------------------- */
+
+@media(max-width:345px){
+    .review-blq{
+        margin-bottom: 10px;
+    }
+
+    .review__image-box{
+        display: none;
+    }
+
+}
